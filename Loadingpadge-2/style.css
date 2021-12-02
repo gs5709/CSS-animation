@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161616;
+}
+.container{
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .container .ring1::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    background-color: #d31e1e;
+    border-radius: 50%;
+} */
+
+.container .ring1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #d31e1e;
+    box-shadow: 0 0 0 3px #d31e1e44,0 0 0 6px #d31e1e33,0 0 0 9px #d31e1e22;
+    animation: ghum1 4s linear infinite;
+}
+@keyframes ghum1{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* .container .ring1 .ring2::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 42px;
+    left: 9px;
+    background-color: #d31e1e;
+    border-radius: 50%;
+} */
+
+.container .ring1 .ring2{
+    width: 200px;
+    height: 200px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    border-bottom: 4px solid #1e8bd3;
+    box-shadow: 0 0 0 3px #1e8bd344, 0 0 0 6px #1e8bd333,0 0 0 9px #1e8bd322;
+    animation: ghum2 4s linear infinite;
+}
+@keyframes ghum2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(720deg);
+    }
+}
+
+p{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    bottom: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.3em;
+}
